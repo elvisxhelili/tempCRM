@@ -1,11 +1,12 @@
-## TempCRM
+## BasicCRM
 
-L'utente deve essere in grado di autenticarsi. (Nota, l'utente autenticato verrà considerato admin).
+Basic CRM like app build with Laravel with no enhanced UI (out of the box Laravel).
 
-* L'utente deve essere in grado di creare Clienti
-* L'utente deve essere in grado di creare Ordini ed associarli a Clienti. 
-    * Quando un Ordine viene creato, viene automaticamente creato un Contratto associato al Cliente e all'Ordine.
-* Durante la creazione e modifica di un Ordine, quest'ultimo potrà essere associato ad uno o più Tags già presenti nel sistema.
-* Quando viene cancellato un Ordine, viene cancellato il Contratto
-* Quando viene cancellato un Cliente, vengono cancellato tutti gli Ordini e tutti i Contratti appartenenti a quel Cliente.
-* Tutte le cancellazioni devono essere recuperabili.
+Features: 
+-Admin is able to create clients
+-* is able to create Orders and link them with client
+    -- when an order is created a Contract is automatically created as well and linked with Client and Order
+-ability to edit Order and add multiple tags to it.
+-when Order is deleted the Contracts is cancelled as well
+-when Client is deleted associated Orders and Contracts are deleted as wel.
+-every deleted entity is reversible.
